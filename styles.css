@@ -147,14 +147,14 @@ nav ul li a:hover {
     }
 }
 .card {
+    display: flex;
+    flex-direction: column; /* Changed to column for better stacking */
     width: 300px;
-    height: auto; /* Let the height adjust based on content */
+    height: 100%;
     border: 1px solid #457B9D;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    position: relative; /* Added relative positioning */
+    overflow: hidden; /* Ensure content doesn't overflow */
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
 }
 
 .card:hover {
@@ -162,7 +162,6 @@ nav ul li a:hover {
 }
 
 .card-link {
-    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -181,33 +180,41 @@ nav ul li a:hover {
 }
 
 .card:hover::before {
-    opacity: 1;
+    opacity: 0.7; /* Adjusted opacity on hover */
 }
 
 .card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    height: 75%; /* Maintain image aspect ratio */
+    object-fit: cover; /* Prevent image distortion */
 }
 
 .card-text {
+    padding: 10px;
+    color: #A8DADC;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     right: 0;
-    color: #A8DADC;
-    padding: 0 10px;
-    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    box-sizing: border-box;
 }
 
 .card-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    font-size: 24px;
-    padding: 20px;
+    font-size: 16px; /* Adjusted font size for better readability */
+    padding: 10px;
 }
+
+/* Optional: Media Query for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Adjust card width for smaller screens */
+    }
+}
+
 
 h3 {
     font-size: 40px;
