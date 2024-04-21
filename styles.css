@@ -289,29 +289,73 @@ p {
     }
 }
 
-/* Accordion Styles */
+.accordion-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .accordion-item {
     margin-bottom: 20px;
+    border: 1px solid #457B9D;
+    border-radius: 8px;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .accordion-btn {
-    background-color: #44344F;
-    color: #D3FCD5;
-    font-family:  'Truculenta';
+    background-color: #A8DADC;
+    color: #000;
+    font-family: 'Jersey 25', sans-serif;
     font-size: 25px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
     text-align: center;
+    border-radius: 8px;
 }
 
 .accordion-content {
     display: none;
-    padding: 10px 20px;
+    padding: 10px;
 }
+
+.accordion-info {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-icons {
+    margin-top: 10px;
+}
+
+.accordion-icon {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Show accordion content when button is clicked */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.show-message-btn {
+    background-color: #457B9D;
+    color: #fff;
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.show-message-btn:hover {
+    background-color: #1D3557;
+}
+
 
 .fa-solid,
 .fa-brands {
@@ -331,8 +375,8 @@ p {
 }
 /* Footer Styles */
 footer {
-    background-color: #44344F;
-    color: #D3FCD5;
+    background-color: #E63946;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
