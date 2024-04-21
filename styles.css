@@ -86,11 +86,11 @@ h2 {
         padding: 20px;
     }
 }
-
 /* Navigation Bar Styles */
 nav {
     background-color: #E63946;
-    padding: 10px 20px;
+    font-size: 2rem;
+    padding: 50px 20px; /* Increase top and bottom padding */
     position: fixed;
     top: 0;
     left: 0;
@@ -117,7 +117,7 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px 20px; /* Increase top and bottom padding */
     transition: color 0.3s ease;
 }
 
@@ -128,7 +128,7 @@ nav ul li a:hover {
 /* Responsive Navigation Bar */
 @media screen and (max-width: 768px) {
     nav {
-        padding: 10px;
+        padding: 20px; /* Adjust padding for smaller screens */
     }
 
     nav ul {
@@ -140,12 +140,13 @@ nav ul li a:hover {
         display: block;
         margin-bottom: 10px;
     }
+}
 
     .hero-banner {
         padding: 30px; /* Adjust padding for smaller screens */
         margin-top: 120px; /* Increase margin to accommodate the fixed navigation */
     }
-}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -340,6 +341,22 @@ p {
     display: block;
 }
 
+/* Add hover effect to accordion button */
+.accordion-btn:hover {
+    background-color: #457B9D; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Optional: Adjust box shadow on hover */
+.accordion-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+/* Show cursor as pointer on hover */
+.accordion-btn:hover {
+    cursor: pointer;
+}
+
 .show-message-btn {
     background-color: #457B9D;
     color: #fff;
@@ -375,8 +392,27 @@ p {
 }
 /* Footer Styles */
 footer {
-    background-color: #E63946;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E63946; /* Background color */
+    color: #fff; /* Text color */
+    height: 80px; /* Height of the footer */
+    empty-cells: show;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text */
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+    footer {
+        height: 120px; /* Increase height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        height: 160px; /* Further increase height for even smaller screens */
+    }
 }
