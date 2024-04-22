@@ -17,6 +17,7 @@ body {
     color: #f1faee;
     text-align: center;
     padding: 50px;
+    margin-top: 80px; /* Add margin to create space for the fixed navigation */
 }
 
 .hero-image {
@@ -49,7 +50,7 @@ body {
 }
 
 .hero-text {
-    font-size: 2rem;
+    font-size: 4vw;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -85,53 +86,6 @@ h2 {
     }
 }
 
-h3 {
-    font-size: 2rem;
-    background-color: #457B9D;
-    color: #f1faee;
-    text-align: left;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-h4 {
-    position: relative;
-    bottom: 20px;
-    font-size: 30px;
-    background-color:  #A8DADC;
-    text-align: left;
-}
-@media screen and (max-width: 768px) {
-    h4 {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    h4 {
-        font-size: 24px; /* Adjust font size for 4K screens */
-        padding: 20px; /* Adjust padding for 4K screens */
-    }
-}
-p {
-    font-size: 1.5vw; /* Example: set font size to 2% of the viewport width */
-    padding: 2%; /* Example: set padding to 2% of the parent element's width */
-}
-
-@media screen and (max-width: 768px) {
-    p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    p {
-        font-size: 24px; /* Adjust font size for 4K screens */
-        padding: 20px; /* Adjust padding for 4K screens */
-    }
-}
 /* Navigation Bar Styles */
 nav {
     background-color: #E63946;
@@ -171,22 +125,6 @@ nav ul li a:hover {
     color: #A8DADC;
 }
 
-/* Responsive Navigation Bar */
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
 /* Footer Styles */
 footer {
     background-color: #E63946;
@@ -247,4 +185,3 @@ footer {
         font-size: 14px;
     }
 }
-
